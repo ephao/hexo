@@ -1,0 +1,92 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site - Basic information about your site
+title: Rise Beyond 9-to-5         # The title of your website
+subtitle: 'Achieving SUccess Beyond the 9-to-5'            # Subtitle that appears below the title
+description: '"Rise Beyond 9-to-5" is a dynamic resource for professionals looking to achieve personal and career growth outside standard working hours. Our site offers practical tips, expert advice, and strategies on skill development, productivity, and networking to help you leverage your after-work hours for success. Ideal for anyone aiming to advance their career, learn new skills, or build a side hustle, "Rise Beyond 9-to-5" guides you in turning free time into valuable opportunities. Unlock your potential and rise beyond the ordinary with our comprehensive content designed for ambitious professionals.'         # Site description for SEO purposes
+keywords:  After-hours career growth, Productivity beyond 9-to-5, Work-life success tips, Side hustle ideas, Professional growth outside work            # Keywords for SEO (comma-separated)
+author: Allen         # Your name/identity
+language: en           # Primary language of the site (e.g. en, zh-CN)
+timezone: ''          # Your timezone (e.g. America/New_York)
+
+# URL - Settings for site URLs and permalinks
+url: http://example.com  # Your site's main URL
+permalink: :year/:month/:day/:title/  # URL format for posts
+permalink_defaults:     # Default values for permalink variables
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory - Folder structure configuration
+source_dir: source      # Where your content is stored
+public_dir: public      # Where generated site is stored
+tag_dir: tags          # Directory for tag pages
+archive_dir: archives   # Directory for archive pages
+category_dir: categories # Directory for category pages
+code_dir: downloads/code # Directory for downloadable code
+i18n_dir: :lang        # Directory for internationalization
+skip_render:           # Files/folders to skip rendering
+
+# Writing - Post and content generation settings
+new_post_name: :title.md # Format for new post filenames
+default_layout: post    # Default template for new posts
+titlecase: false       # Whether to capitalize titles
+external_link:         # External link behavior
+  enable: true         # Open external links in new tab
+  field: site          # Apply to whole site
+  exclude: ''          # URLs to exclude
+filename_case: 0       # Transform filenames to 1:lowercase, 2:uppercase
+render_drafts: false   # Whether to display draft posts
+post_asset_folder: false # Enable per-post asset folders
+relative_link: false   # Use relative links
+future: true          # Show future posts
+syntax_highlighter: highlight.js # Code syntax highlighting
+highlight:            # Highlight.js settings
+  line_number: true   # Show line numbers
+  auto_detect: false  # Auto detect language
+  tab_replace: ''     # Replace tabs with spaces
+  wrap: true         # Wrap long lines
+  hljs: false        # Use hljs classes
+prismjs:             # PrismJS settings
+  preprocess: true   # Process code blocks
+  line_number: true  # Show line numbers
+  tab_replace: ''    # Replace tabs with spaces
+
+# Home page setting
+index_generator:      # Homepage generation settings
+  path: ''           # Root path for blog index
+  per_page: 10       # Posts per page
+  order_by: -date    # Sort posts by date descending
+
+# Category & Tag
+default_category: uncategorized # Default post category
+category_map:        # Category name mapping
+tag_map:            # Tag name mapping
+
+# Metadata elements
+meta_generator: true # Generate meta generator tag
+
+# Date / Time format
+date_format: YYYY-MM-DD  # Date display format
+time_format: HH:mm:ss   # Time display format
+updated_option: 'mtime'  # Post update time basis
+
+# Pagination
+per_page: 10        # Items per page
+pagination_dir: page # Pagination directory name
+
+# Include / Exclude file(s)
+include:            # Additional files to include
+exclude:            # Files to exclude
+ignore:             # Files to ignore
+
+# Extensions
+theme: next         # Active theme
+                   # Available plugins: https://hexo.io/plugins/
+                   # Available themes: https://hexo.io/themes/
+
+# Deployment
+deploy:             # Deployment settings
+  type: ''         # Deployment method (git, heroku, etc.)
